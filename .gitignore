@@ -1,0 +1,5 @@
+#to ignore all files in folder
+ignore 
+ignore/*
+#but not present.txt
+!ignore/present.txt
