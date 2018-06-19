@@ -1,0 +1,4 @@
+# exclude all files inside folder ignore except present.txt
+**/ignore/**
+!**/ignore/present.txt
+
