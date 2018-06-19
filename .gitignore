@@ -1,0 +1,6 @@
+
+#ignore the folder ignore
+ignore/
+
+#But not ignore/present.txt
+!ignore/present.txt
