@@ -1,0 +1,3 @@
+#ignore except this
+!.gitignore
+!present.txt
