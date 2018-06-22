@@ -1,6 +1,6 @@
-#Basic Git Commands
+# Basic Git Commands
 
-##Config/setup
+## Config/setup
 ### Setting Global Username/Email
 git config --global user.name "vaisakhn"'
 git config --global user.email "vaisakhn@qburst.com"'
@@ -11,7 +11,7 @@ git clone <url>
 ### Creating an empty GIT repository
 git init
 
-##Adding/Deleting files
+## Adding/Deleting files
 
 ### Adding all files to Git
 git add .
@@ -25,7 +25,7 @@ git add <foldername>
 ### Remmove File from the Project
 git rm <file1> <file2>
 
-##Commit
+## Commit
 
 ### Performing Commit with Message
 git commit <file> -m "Message"
@@ -36,7 +36,7 @@ git commit -a -m "Message"
 ### Reverts changed you performed in the <filename>
 git checkout -- <filename>
 
-##Commit History
+## Commit History
 
 ### All Git Commits (Reverse Chronological Order)
 git log
@@ -47,7 +47,7 @@ git log -p
 ### Git Log with Graph
 git log --all --decorate --oneline --graph
 
-##Changes
+## Changes
 
 ### Show files added to the index, files with changes, and untracked files
 git status
@@ -61,7 +61,7 @@ git diff --cached
 ### Show changes since last commit
 git diff HEAD
 
-##Sharing
+## Sharing
 
 ### Fetches from the remote and merge to the current branch
 git pull
@@ -73,7 +73,7 @@ git pull --rebase origin master
 git push <remote-name> <branch-name>
 git push origin master
 
-##Git Branching Explained 
+## Git Branching Explained 
 
 ### Creates a new branch from the old branch
 git checkout -b <newbranch> <oldbranch>
@@ -89,25 +89,25 @@ git checkout -f      # -f Forcing to change branch. This is used to throw local 
 git merge --no-ff <newbranch>
 git push origin develop
 
-##Creating a release version
+## Creating a release version
 
 git checkout -b release-1.2 develop
 
-##Making Commit
+## Making Commit
 
 git commit -a -m "Release Version"
 
-##Finishing a release branch
+## Finishing a release branch
 
 git checkout master
 git merge --no-ff release-1.2
 git tag -a 1.2
 
-##Merging contents of release1.2 to the develop branch
+## Merging contents of release1.2 to the develop branch
 
 git checkout develop
 git merge --no-ff release-1.2
 
-##Deleting Branch
+## Deleting Branch
 
 git branch -d release1.2
