@@ -1,6 +1,6 @@
-#GIT COMMANDS#
+# GIT COMMANDS 
 
-##General##
+## General
 
 -Initialize Git: git init
 
